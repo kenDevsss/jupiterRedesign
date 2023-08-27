@@ -1,0 +1,12 @@
+
+<div class="categoryLane">
+    <div class="categoryLaneUpper"><h1>{{CategoryTitle}}</h1><img src="../../assets/Subtract.svg"/></div>
+    <button (click)="scroll('L')" class="arrowButton_L arrowButton" style="display: none;" #leftArrow><h1><</h1></button>
+    <button (click)="scroll('R')" class="arrowButton_R arrowButton"><h1>></h1></button>
+    <div class="category_HScroll" #CategoryLaneComponent>
+       
+       <app-item-list *ngFor="let card of cards" [imageLink]="card.imgUrl" [showTitle]="card.title"></app-item-list> 
+       <!-- <h1 *ngFor="let card in cards">card.title</h1> -->
+       
+    </div>
+</div>

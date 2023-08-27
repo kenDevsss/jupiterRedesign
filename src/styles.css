@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "SF Pro Regular";
+    src: url(./assets/fonts/SFPRODISPLAYREGULAR.OTF);
+  }
+
+  @font-face {
+    font-family: "SF Pro Bold";
+    src: url(./assets/fonts/SFPRODISPLAYBOLD.OTF);
+  }
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: "SF Pro Regular";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility !important;
+
+    object-fit: cover;
+    color:  white;
+  }
+
+  html{
+    overflow-x: hidden;
+    padding: 40px 0;
+
+    /* background-color: #222; */
+ 
+  }
+
+  body{
+    background-image: url("./assets/jupiterBG.png");
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-position: center left;
+    background-attachment: fixed;
+  }
+
+  h1{
+font-family: "SF Pro Bold";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+
+  @media only screen and (max-width: 750px) { /* mobile specialties */
+    h1{
+      font-family: "SF Pro Bold";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+        }
+  }
+
+  /* ========== */
+
+  @media only screen and (min-width: 751px) { /* show scrollbar only on desktop */
+   
+::-webkit-scrollbar {
+  width: 8px; 
+  background-color: #222; 
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #545454; 
+  border-radius: 8px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7b7b7b;
+}
+
+
+::-webkit-scrollbar-corner {
+  background: transparent; 
+}
+
+  }
+

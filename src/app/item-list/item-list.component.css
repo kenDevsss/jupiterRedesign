@@ -1,0 +1,115 @@
+.cardWrapper {
+    /* background-color: darkgray; */
+    /* height: 320px; */
+    height:100%;
+    width: 240px;
+    
+
+    
+    position:relative;
+}
+
+.card > img{
+    transition: all 125ms ease-out;
+
+    height: 320px;
+    width: 240px;
+    border-radius: 12px;
+}
+
+.card{
+    transition: all 125ms ease-out;
+    cursor: pointer;
+
+    position: absolute;
+    top:0;
+    left:0;
+    
+
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 12px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 4px 9px 0px rgba(0, 0, 0, 0.10), 0px 17px 17px 0px rgba(0, 0, 0, 0.09), 0px 38px 23px 0px rgba(0, 0, 0, 0.05), 0px 68px 27px 0px rgba(0, 0, 0, 0.01), 0px 106px 30px 0px rgba(0, 0, 0, 0.00);
+
+    overflow: hidden;
+
+    background-color: white;
+    height: 320px;
+    width: 240px;
+}
+
+.card:hover{
+    
+    transition: all 75ms ease-in-out; /* transition: <property> || <duration> || <timing-function> || <delay> [, ...]; */
+    left: -7.5px;
+    top:-10px;
+    outline:3px solid white;
+    height: 340px;
+    width: 255px ;
+    margin-top:3px;
+}
+
+.card:hover > img{
+    transition: all 75ms ease-in-out;
+    height:340px;
+    width:255px;   
+}
+
+.card:hover > .gradient, .card:hover > .cardTitle, .card:hover > .cardIcon{
+    transition: all 200ms ease-in-out;
+    opacity: 1;
+}
+
+.gradient{
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+
+    position: absolute;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, #000 93.44%, #000 100%);
+    height:100%;
+    width:100%;
+}
+
+.cardIcon{
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    max-width:30px;
+    max-height:30px;
+    object-fit: contain;
+    /* background-color: red; */
+    border-radius: 0px !important;
+
+    fill: #FFF;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.20)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.20)) drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.17)) drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.10)) drop-shadow(0px 13px 5px rgba(0, 0, 0, 0.03)) drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.00));
+
+}
+
+
+
+.cardTitle{
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+
+    position: absolute;
+    z-index: 2;
+
+    left:15px;
+    bottom:15px;
+    margin-right: 15px;
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

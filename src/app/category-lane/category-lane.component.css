@@ -1,0 +1,98 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.categoryLane{
+    position: relative;
+    /* margin: 0px 50px 0 50px;
+    padding: 0 30px 0 30px; */
+    
+    width:100%;
+    height:min-content;
+
+    overflow: visible;
+
+/*     overflow-x: hidden;
+    overflow-y: visible; */
+}
+
+.categoryLaneUpper{
+    margin: 0 auto 15px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+    
+}
+
+.categoryLaneUpper img{
+    transition: all 75ms ease-in-out;
+    height: 25px;
+    width: 25px;
+    margin: 3px 0 0 0;
+    object-fit: contain;
+}
+
+.categoryLaneUpper > h1:hover{
+   transition: all 75ms ease-in-out;
+    margin-right: 5px;
+}
+
+.categoryLaneUpper > h1{
+    transition: all 75ms ease-in-out;
+    margin:0;
+    cursor: pointer;
+}
+
+
+.category_HScroll{
+    display: flex;
+    flex-direction: row;
+    
+    /* position:relative;
+    z-index: 1; */
+
+    /* margin: 15px 0; */
+    padding: 10px 60px 370px 60px;
+
+    gap:20px;
+
+    height:346px;
+    /* max-height: min-content; */
+    width:100%;
+
+    overflow: scroll;
+
+    /* overflow-x: scroll;
+    overflow-y: visible; */
+}
+
+.arrowButton{
+    position: absolute;
+    height:320px;
+    width: 100px;
+    
+    border:none;
+    cursor: pointer;
+    bottom:0;
+    
+    margin-bottom: 50px;
+
+    z-index: 11;
+}
+
+.arrowButton_R {
+    right:0;
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0,0,0,0.75) 50%, #000 100%);
+}
+
+.arrowButton_L {
+    left:0;
+    background:linear-gradient(-90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0,0,0,0.75) 50%, #000 100%);
+}
+
+@media only screen and (max-width: 750px) { /* mobile specialties */
+    .arrowButton{
+        display: none;
+    }
+  }
